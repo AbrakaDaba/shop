@@ -1,0 +1,37 @@
+/*********************************
+          Collections
+*********************************/
+.woman-col-holder, .man-col-holder {
+  @include TheCenter;
+  position: relative;
+  }
+
+.woman-collection, .man-collection {
+  position: absolute;
+  margin: 0 auto;
+
+  h4 {
+    color: #fff;
+    font-size: 26px;
+  }
+}
+
+.collections-holder {
+  opacity: 0.8;
+
+  .bottom-right2 {
+    @include CollectionWhiteAngles;
+    right: 25px;
+    bottom: 10px;
+    border-right: 1.5pt solid white;
+    border-bottom: 1.5pt solid white;
+  }
+
+  .top-left2 {
+    @include CollectionWhiteAngles;
+    left: 25px;
+    top: 10px;
+    border-left: 1.5pt solid white;
+    border-top: 1.5pt solid white;
+  }
+}

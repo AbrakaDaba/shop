@@ -1,0 +1,62 @@
+/*********************************
+          SHOPING WINDOW
+*********************************/
+.img-holder {
+  position: relative;
+  width:auto;
+  .img-responsive {
+    opacity: 30%;
+  }
+}
+
+
+.blue-cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: blue;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(133, 195, 220, 0.95);
+  opacity: 95%;
+  bottom: 0;
+}
+
+.name-price-holder {
+  // position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // flex-direction: row;
+  padding: 15px 15px 0px 15px;
+  h4, p, ul {
+    font-size: 16px;
+  }
+  ul li {
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+  }
+}
+
+.article-name {
+  min-width: 40%;
+  justify-content: flex-start;
+  margin: 0px;
+}
+.product-price{
+  display: flex;
+  min-width: 40%;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0;
+  p {
+    line-height: 16px;
+  }
+  }
+
+.color-boxes {
+  min-width: 100%;
+@include ColorBoxesABC (#111, #ddd, #3f3f3f);
+}

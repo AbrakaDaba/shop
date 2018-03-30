@@ -1,0 +1,67 @@
+
+
+@mixin textSize ($fz, $lh, $color) {
+  font-size: ($fz);
+  line-height: ($lh);
+  color: ($color);
+}
+
+@mixin TheCenter {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@mixin CollectionWhiteAngles {
+  width: 67px;
+  height: 30px;
+  display: block;
+  position: absolute;
+}
+
+
+
+@mixin MarginBottom  ($a, $b, $c, $d, $e, $f, $g, $h) {
+  #myCarousel {
+    margin-bottom: ($a);
+  }
+  .welcome h3 {
+    margin-bottom: ($b);
+  }
+  .welcome img {
+    margin-bottom: ($c);
+  }
+  .welcome p {
+    margin-bottom: ($d);
+  }
+.woman-col-holder {
+    margin-bottom: ($e);
+  }
+.man-col-holder {
+    margin-bottom: ($f);
+  }
+.little-nav {
+    margin-bottom: ($g);
+  }
+  .article-holder {
+    margin-bottom: ($h);
+  }
+}
+
+
+@mixin ColorBoxesABC ($f, $s, $t) {
+.first {
+    background-color: ($f);
+  }
+.second {
+    background-color: ($s);
+  }
+.third {
+    background-color: ($t);
+  }
+}
+
+@mixin equalsides ($a) {
+  width: ($a);
+  height: ($a);
+}

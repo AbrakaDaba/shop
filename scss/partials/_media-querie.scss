@@ -1,0 +1,296 @@
+
+/*********************************
+**********************************
+          Media queries
+**********************************
+*********************************/
+
+
+/*********************************
+              X S
+*********************************/
+
+@media screen and (min-width: 320px) {
+  @include MarginBottom (40px, 31px, 20px, 12px, 16px, 30px, 33px, 30px);
+  .carousel-inner {
+    display: none;
+  }
+  .heading-holder .top-left,.heading-holder .bottom-right, .carousel-control, .carousel-indicators {
+    visibility: hidden;
+  }
+  .heading-holder {
+    background-image: url('../img/background-intro.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: 100%;
+    .text-holder {
+      margin-top: -100%;
+    }
+  }
+    .img-holder:hover {
+      .img-responsive {
+          opacity: .7;}
+   }
+   .img-responsive {
+     transition: all 0.35s;
+   }
+}
+
+
+
+  @media screen and (max-width: 400px) {
+    @include MarginBottom (44px, 31px, 20px, 25px, 30px, 30px, 33px, 35px);
+
+    .carousel-inner {
+      display: none;
+    }
+    .heading-holder .top-left,.heading-holder .bottom-right, .carousel-control, .carousel-indicators {
+      visibility: hidden;
+    }
+    .heading-holder {
+    }
+     .article-holder {
+         min-width: 100%;
+         height: auto;
+       }
+  }
+
+  @media screen and (min-width: 400px) {
+    .product-price {
+      min-width: 100%;
+    }
+ }
+
+@media screen and (max-width: 768px) {
+  .white-bg {
+    height: 50px;
+  }
+  .logo-holder {
+margin-top: 7px;
+  }
+  .nav-holder {
+    max-height: 50px;
+    float: left;
+  }
+  .socnet-holder {
+    display: flex;
+    justify-content: center;
+    ul li{
+      display: inline-block;
+    }
+  }
+.shop-info p:first-of-type {
+  padding-right: 0px !important;
+}
+}
+
+/**********************************
+              S M
+**********************************/
+
+  @media screen and (min-width: 768px) {
+    @include MarginBottom (40px, 34px, 20px, 12px, 26px, 30px, 38px, 36px);
+    .phone-holder {
+      @include textSize (16px, 40px, #333);
+      a {
+        @include textSize (16px, 40px, #333);
+      }
+    }
+    .white-bg {
+      height: 130px;
+      .logo-holder{
+        margin-top: 42px;
+      }
+      .nav-holder {
+        margin-top: 44px;
+        right: 0;
+      }
+    }
+
+    .carousel-inner {
+      position: relative;
+      display: block;
+      height: auto;
+    }
+    .heading-holder .top-left,.heading-holder .bottom-right, .carousel-control, .carousel-indicators {
+      visibility: visible;
+    }
+
+    .top-left2, .bottom-right2 {
+      transition: transform 0.35s;
+    }
+    .man-col-holder:hover, .woman-col-holder:hover {
+      .top-left2 {
+        transform: matrix(1.5,0.00,0.00,1.5,30,30);
+      }
+      .bottom-right2 {
+        transform: matrix(1.5,0.00,0.00,1.5,-30,-30);
+      }
+    }
+    .heading-holder {
+      background: none;
+      position: absolute;
+      width: 620px;
+      height: 160px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 0;
+      margin: 0;
+
+      .text-holder {
+        margin: 0;
+      }
+    }
+    .product-price {
+      min-width: 50%;
+    }
+    .img-holder:hover {
+      .img-responsive {
+          opacity: .7;}
+      .blue-cover {
+         transform: translateY(0);
+    }
+    }
+    .blue-cover {
+      transform: translateY(100%);
+      transition: transform 0.35s;
+    }
+    .socnet ul li a img {
+      width: 20px;
+      height: auto;
+      left: 0px;
+    }
+    .socnet-holder {
+      height: 50px;
+      justify-content: space-between;
+
+  }
+  }
+
+.img-holder {
+  overflow: hidden;
+}
+
+
+/**********************************
+               M D
+**********************************/
+
+
+  @media screen and (min-width: 992px) {
+    @include MarginBottom (40px, 38px, 20px, 70px, 55px, 55px, 43px, 35px);
+
+    .search-shoping-bag-holder {
+      margin-top: 36px;
+      display: inline-block;
+    }
+
+    .nav-holder {
+      display: inline-block;
+      margin-right: 220px;
+    }
+
+  .carousel-inner {
+    display: block;
+    height: auto;
+  }
+
+  .heading-holder {
+    background-image: none;
+    position: absolute;
+    width: 620px;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .logo-nav-search-container {
+    .logo-holder {
+        h1 {
+          height: 30px;
+          a {
+             img {
+               height: 30px;
+               width: auto;
+            }
+          }
+        }
+      }
+  }
+  .carousel-control .glyphicon-chevron-left {
+          left: 110px;
+  }
+  .carousel-control .glyphicon-chevron-right {
+          right: 110px;
+  }
+ 
+
+  .image-holder:cover{
+    content-height: 60px;
+  }
+  .socnet-holder {
+    height: 90px;
+  }
+
+#backtotop {
+  border: 1px solid lightblue;
+  background-image: url("../img/back-to-top-blue.png");
+  bottom: -63px;
+  &:hover {
+  background-image: url("../img/back-to-top-white.png");
+  background-color: lightblue;
+  }
+}
+.aside-nav {
+  padding-right: 60px;
+}
+}
+
+
+/**********************************
+               X L
+**********************************/
+
+
+  @media screen and (min-width: 1200px) {
+    @include MarginBottom (70px, 38px, 20px, 70px, 55px, 55px, 47px, 50px);
+    .carousel-inner {
+      display: block;
+      height: auto;
+    }
+    .heading-holder {
+      background: none;
+      position: absolute;
+      width: 620px;
+      height: 198px;
+      background-color: rgba(0, 0, 0, 0.3);
+      .text-holder {
+        width: 358px;
+        height: 122px;
+        h2 {
+          font-size: 96px;
+          line-height: 96px;
+        }
+        h3 {
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+    .carousel-control .glyphicon-chevron-left {
+            left: 110px;
+    }
+    .carousel-control .glyphicon-chevron-right {
+            right: 110px;
+    }
+    .shop-info h3 {
+    font-size: 30px;
+   }
+   .aside-nav {
+     // padding-right: 100px;
+   }
+   #backtotop {
+     // margin-left: 50px;
+   }
+}
